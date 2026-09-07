@@ -15,6 +15,13 @@ services:
       timeout: 5s
       retries: 10
 
+  temporal:
+    image: temporalio/temporal:latest
+    command: ["server", "start-dev", "--ip", "0.0.0.0", "--ui-port", "8233"]
+    ports:
+      - "7233:7233"
+      - "8233:8233"
+
   backend:
     build:
       context: ./backend
@@ -27,14 +34,22 @@ services:
       SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5432/springtorch
       SPRING_DATASOURCE_USERNAME: springtorch
       SPRING_DATASOURCE_PASSWORD: springtorch
+      TEMPORAL_ADDRESS: temporal:7233
     depends_on:
       postgres:
         condition: service_healthy
+      temporal:
+        condition: service_started
 
   jobs:
     build:
       context: ./jobs
       dockerfile: Dockerfile
+    environment:
+      TEMPORAL_ADDRESS: temporal:7233
+    depends_on:
+      temporal:
+        condition: service_started
 
 volumes:
   postgres-data:
