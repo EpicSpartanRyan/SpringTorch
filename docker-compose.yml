@@ -31,5 +31,10 @@ services:
       postgres:
         condition: service_healthy
 
+  jobs:
+    build:
+      context: ./jobs
+      dockerfile: Dockerfile
+
 volumes:
   postgres-data:
