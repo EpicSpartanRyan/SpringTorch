@@ -1,0 +1,27 @@
+# Version control
+.git/
+.gitignore
+.gitattributes
+
+# Gradle caches and build output
+.gradle/
+build/
+.kotlin/
+.kotlin_metadata/
+
+# IDE and editor files
+.idea/
+.vscode/
+*.iml
+*.ipr
+*.iws
+
+# Generated and local files
+bin/
+out/
+*.log
+HELP.md
+
+# OS files
+.DS_Store
+Thumbs.db
