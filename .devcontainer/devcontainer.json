@@ -7,6 +7,41 @@
   "features": {
     "ghcr.io/devcontainers/features/docker-outside-of-docker:1": {
       "moby": false
+    },
+    "ghcr.io/devcontainers/features/python:1": {
+      "version": "3.14"
+    },
+    "ghcr.io/devcontainers-extra/features/uv:1": {}
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python", // Python language
+        "ms-python.vscode-pylance",
+        "ms-python.debugpy",
+        "charliermarsh.ruff",
+        "ms-python.vscode-python-envs",
+
+        "vscjava.vscode-java-pack", // Java language
+        "JetBrains.intellij-server",
+        "vscjava.vscode-gradle",
+
+        "vmware.vscode-boot-dev-pack", // Frameworks 
+        "FastAPILabs.fastapi-vscode",
+
+        "ms-azuretools.vscode-containers", // Docker and Kubernetes
+        "ms-azuretools.vscode-docker",
+        "docker.docker",
+        "ms-kubernetes-tools.vscode-kubernetes-tools",
+        "magabde.focus-microservice",
+        "ms-vscode-remote.remote-containers",
+
+        "ms-vscode-remote.remote-ssh", // Remote development
+        "ms-vscode-remote.remote-ssh-edit",
+        "ms-vscode.remote-explorer",
+
+        "redhat.vscode-yaml"
+      ]
     }
   },
   "remoteUser": "root",
