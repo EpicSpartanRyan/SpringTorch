@@ -147,18 +147,6 @@ Run in the background:
 docker compose up -d --build
 ```
 
-View Python worker logs:
-
-```powershell
-docker compose logs -f jobs
-```
-
-View backend logs:
-
-```powershell
-docker compose logs -f backend
-```
-
 Stop the services:
 
 ```powershell
