@@ -45,6 +45,9 @@
     }
   },
   "remoteUser": "root",
+  "remoteEnv": {
+    "TESTCONTAINERS_HOST_OVERRIDE": "host.docker.internal"
+  },
   "forwardPorts": [8080],
   "portsAttributes": {
     "8080": {
