@@ -4,10 +4,10 @@ version = "0.1.0"
 description = "Temporal workers and jobs for SpringTorch"
 requires-python = ">=3.14"
 dependencies = [
-    "accelerate>=1.10.0",
-    "torch>=2.7.0",
+    "accelerate>=1.14.0",
+    "torch>=2.14.0",
     "temporalio>=1.32.0",
-    "transformers>=4.57.0",
+    "transformers>=5.16.1",
     "testcontainers>=4.15.0",
 ]
 
