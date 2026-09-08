@@ -1,6 +1,6 @@
 FROM python:3.14-slim-bookworm
 
-COPY --from=ghcr.io/astral-sh/uv:0.12.10 /uv /uvx /bin/
+COPY --from=ghcr.io/astral-sh/uv:0.12.11 /uv /uvx /bin/
 
 RUN apt-get update \
 	&& apt-get install -y --no-install-recommends build-essential \
