@@ -2,7 +2,7 @@
   "name": "SpringTorch Backend",
   "dockerComposeFile": "../docker-compose.yml",
   "service": "backend",
-  "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
+  "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}/SpringTorch.code-workspace",
   "workspaceMount": "source=${localWorkspaceFolder},target=/workspaces/${localWorkspaceFolderBasename},type=bind",
   "features": {
     "ghcr.io/devcontainers/features/docker-outside-of-docker:1": {

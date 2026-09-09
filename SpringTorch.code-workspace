@@ -1,0 +1,17 @@
+{
+  "folders": [
+    {
+      "name": "SpringTorch",
+      "path": "."
+    },
+    {
+      "name": "backend",
+      "path": "backend"
+    },
+    {
+      "name": "jobs",
+      "path": "jobs"
+    }
+  ],
+  "settings": {}
+}
