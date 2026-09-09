@@ -20,8 +20,8 @@ repositories {
 }
 
 dependencies {
-	implementation("io.temporal:temporal-sdk:1.33.0")
-	testImplementation("io.temporal:temporal-testing:1.33.0")
+	implementation("io.temporal:temporal-sdk:1.38.0")
+	testImplementation("io.temporal:temporal-testing:1.38.0")
 	implementation("org.springframework.boot:spring-boot-starter-data-jpa")
 	implementation("org.springframework.boot:spring-boot-starter-flyway")
 	implementation("org.springframework.boot:spring-boot-starter-webmvc")

@@ -13,5 +13,7 @@
       "path": "jobs"
     }
   ],
-  "settings": {}
+  "settings": {
+    "java.configuration.updateBuildConfiguration": "interactive"
+  }
 }
