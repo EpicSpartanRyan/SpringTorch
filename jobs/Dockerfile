@@ -1,10 +1,8 @@
-FROM python:3.14-slim-bookworm
-
-COPY --from=ghcr.io/astral-sh/uv:0.12.11 /uv /uvx /bin/
+FROM ghcr.io/astral-sh/uv:0.12.11-python3.14-trixie
 
 RUN apt-get update \
-	&& apt-get install -y --no-install-recommends build-essential \
-	&& rm -rf /var/lib/apt/lists/*
+    && apt-get install -y --no-install-recommends build-essential \
+    && rm -rf /var/lib/apt/lists/*
 
 WORKDIR /app
 

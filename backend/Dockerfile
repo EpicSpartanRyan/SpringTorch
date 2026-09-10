@@ -1,12 +1,12 @@
-FROM gradle:9.7.1-jdk21 AS builder
-
+FROM gradle:9.7.1-jdk21-resolute AS builder
+# sdf ubuntu 26.04
 WORKDIR /app
 
 COPY . .
 
 RUN gradle bootJar --no-daemon
 
-FROM ubuntu:24.04
+FROM ubuntu:resolute-20260901
 
 RUN apt-get update \
 	&& apt-get install -y --no-install-recommends openjdk-21-jdk \

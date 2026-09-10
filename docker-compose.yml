@@ -1,6 +1,6 @@
 services:
   postgres:
-    image: postgres:17
+    image: postgres:17.11-trixie
     environment:
       POSTGRES_DB: springtorch
       POSTGRES_USER: springtorch
@@ -16,7 +16,7 @@ services:
       retries: 10
 
   temporal:
-    image: temporalio/temporal:latest
+    image: temporalio/temporal:1.8.3
     command: ["server", "start-dev", "--ip", "0.0.0.0", "--ui-port", "8233"]
     ports:
       - "7233:7233"
