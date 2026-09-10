@@ -10,8 +10,9 @@ ENV HF_HOME=/models
 
 COPY pyproject.toml .
 COPY uv.lock .
-COPY main.py .
 
 RUN uv sync --no-dev
+
+COPY . .
 
 CMD ["uv", "run", "main.py"]
