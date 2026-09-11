@@ -33,8 +33,8 @@ Services defined in `docker-compose.yml`:
 
 The backend is located in `backend/` and uses:
 
-- Spring Boot `4.0.8`.
-- Kotlin `2.2.21`.
+- Spring Boot `4.1.1`.
+- Kotlin `2.4.20`.
 - JDK `21`.
 - Gradle Kotlin DSL.
 - Spring Data JPA.
@@ -43,7 +43,7 @@ The backend is located in `backend/` and uses:
 - SpringDoc OpenAPI.
 - HTMX Spring Boot.
 - Testcontainers for PostgreSQL integration tests.
-- Temporal Java SDK `1.33.0`.
+- Temporal Java SDK `1.38.0`.
 
 The backend contains the Temporal Workflow, the Temporal client, the Java Worker that executes the Workflow, and the REST controller.
 
