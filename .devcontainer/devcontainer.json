@@ -30,12 +30,16 @@
 
         "vmware.vscode-boot-dev-pack", // Frameworks 
         "FastAPILabs.fastapi-vscode",
+        "magabde.focus-microservice",
 
         "ms-azuretools.vscode-containers", // Docker and Kubernetes
         "ms-azuretools.vscode-docker",
         "docker.docker",
         "ms-kubernetes-tools.vscode-kubernetes-tools",
-        "magabde.focus-microservice",
+
+        "GitHub.vscode-pull-request-github", // GitHub PR's/Actions, Tasks
+        "github.vscode-github-actions",
+        "spmeesseman.vscode-taskexplorer",
 
         "redhat.vscode-yaml"
       ]
