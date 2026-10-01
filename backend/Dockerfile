@@ -1,4 +1,4 @@
-FROM gradle:9.7.1-jdk21-resolute AS builder
+FROM gradle:9.8.0-jdk21-resolute AS builder
 # sdf ubuntu 26.04
 WORKDIR /app
 
@@ -6,7 +6,7 @@ COPY . .
 
 RUN gradle bootJar --no-daemon
 
-FROM gradle:9.7.1-jdk21-resolute
+FROM gradle:9.8.0-jdk21-resolute
 
 WORKDIR /app
 
