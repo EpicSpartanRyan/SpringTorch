@@ -1,4 +1,4 @@
-FROM ghcr.io/astral-sh/uv:0.12.21-python3.14-trixie
+FROM ghcr.io/astral-sh/uv:0.12.22-python3.14-trixie
 
 RUN apt-get update \
     && apt-get install -y --no-install-recommends build-essential \
